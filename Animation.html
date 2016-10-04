@@ -5,13 +5,21 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-   <svg width="90%" viewBox="0 0 10 10">
-     <ellipse cx="5" cy="0" rx="1" ry="5" fill="orange">
+    <h1>The light goes out</h1>
+    <p>Nothing is certain in life. People love the light because it protects them from the dark and unknown, and it makes them feel warm. But they forget the light also goes out when the time comes. A candle can simply be blown out and then there shall be darkness. Yes the sun gives us light in the day that tis so bright, we fear nothing, but what about a night? They're scared to go out, because the moonlight is not that bright, but there is still some light at night that gives them hope. But what happens when the sun is covered up?
+   <svg width="90%" viewBox="0 0 100 100">
+     <ellipse cx="30" cy="40" rx="10" ry="20" fill="orange">
    <animate attributeName="opacity" from="1" to="0" dur="5s" repeatCount="indefinite"/>
  </ellipse>
- <rect x="5" y="9" width="1" height="10" opacity="0.4" fill="blue">
-   <animate attributeName="fil" from="blue" to="green" dur="10s" begin="click" id="test1" fill="freeze"/>
+ <rect x="25" y="60" width="10" height="50" opacity="0.4" fill="silver">
+ <animate attributeName="opacity" from="1" to="0" dur="5s" repeatCount="indefinite"/>
  </rect>
+  <circle cx="50" cy="10" r="10" fill="yellow">
+    <animate attributeName="fill" from="yellow" to="white" begin="click" dur="6s" id="circle-animation"/>
+  </circle>
+  <circle cx="100" cy="10" r="10" fill="black">
+     <animate attributeName="cx" from="100" to="50" begin="click" dur="5s" repeatCount="none"/>
+   </circle>
    </svg>
   </body>
 </html>
